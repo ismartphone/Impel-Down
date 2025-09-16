@@ -26,7 +26,7 @@ main{
     .sous{
         @include texte();
     }
-    button{
+    .haut{
         @include bouton();
     }
     button:hover{
@@ -43,4 +43,95 @@ section{
             p{
                 @include texte();
             }
- }
+}
+
+div{
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(5, 106, 230));
+    margin-top: 50px;
+    display: flex;
+    margin-left: -60px;
+    flex-direction: column;
+    gap: 20px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.bal {
+height: 40px;
+width: 40px;
+background: rgba(30, 187, 249, 0.8);
+border-radius: 50%;
+border: 1px solid #fdfdfd;
+opacity: 1;
+animation: spinner4 800ms linear infinite;
+}
+@keyframes spinner4 {
+to {
+transform: scale(1.5);
+opacity: 0;
+}
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 500px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+    font-size: 10rem;
+    color: #bbeeff;
+    text-shadow: 0 0 10px #e5f9ff;
+     position: relative;
+    text-shadow: 0 0 10px #8cddf8;
+    animation: ondulation 3s ease-in-out infinite;
+    filter: blur(0.5px) brightness(1.1);
+    overflow: visible;
+}
+
+/* Ondulation du texte */
+@keyframes ondulation {
+  0%, 100% { transform: translateY(0) rotate(0deg); letter-spacing: 0; }
+  25% { transform: translateY(-5px) rotate(-1deg); letter-spacing: 2px; }
+  50% { transform: translateY(4px) rotate(1deg); letter-spacing: 0; }
+  75% { transform: translateY(-2px) rotate(-3deg); letter-spacing: -1px; }
+}
+
+h3::before,
+h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  animation: bulles 4s linear infinite;
+  opacity: 0;
+}
+
+h3::before {
+  left: -20px;
+  animation-delay: 0s;
+}
+
+h3::after {
+  right: -20px;
+  animation-delay: 2s;
+}
+
+@keyframes bulles {
+  0%   { transform: translateY(0) scale(0.5); opacity: 0; }
+  20%  { opacity: 1; }
+  100% { transform: translateY(-100px) scale(1); opacity: 0; }
+}
+
+.baleine{
+    animation: ondulation 3s ease-in-out infinite;
+    filter: blur(0.5px) brightness(1.1);
+    overflow: visible;
+}
