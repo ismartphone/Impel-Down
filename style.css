@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+}
+
+header p {
+  background-color: #11118B;
+  color: azure;
+  padding: 20px;
+  padding-left: 60px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-items: flex-end;
+}
+header img {
+  width: 100%;
+  filter: blur(3px);
+  transition: 0.3s ease-in-out;
+}
+header img:hover {
+  filter: blur(0);
+}
+
+main {
+  padding-left: 60px;
+}
+main h1 {
+  margin-top: 50px;
+  color: #11118B;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transform: scale(1.025);
+  transition: transform 0.125s;
+}
+main .sous {
+  color: #272727;
+  font-family: Lato;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+}
+main button {
+  width: 301px;
+  height: 60px;
+  background: #11118B;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+main button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  transition: transform 0.2s;
+  background-color: #04a5c2;
+}
+
+section {
+  margin: px;
+  background: #EEEEFC;
+  width: 1320px;
+  height: 228px;
+  padding: 50px;
+  margin-top: 54px;
+}
+section h2 {
+  color: #11118B;
+  font-family: Lato;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+section p {
+  color: #272727;
+  font-family: Lato;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+}/*# sourceMappingURL=style.css.map */

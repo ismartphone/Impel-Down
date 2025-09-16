@@ -1,0 +1,46 @@
+@import "./variable";
+@import "./variable2";
+header{
+    p{
+        @include para();
+    }
+    img{
+        width: 100%;
+        @include blur();
+    }
+    img:hover {
+	    -webkit-filter: blur(0);
+	    filter: blur(0);
+}
+    
+}
+
+
+main{
+    padding-left: 60px;
+    
+    h1{
+    @include titre();
+    @include effect();
+    }
+    .sous{
+        @include texte();
+    }
+    button{
+        @include bouton();
+    }
+    button:hover{
+        @include effet();
+    }
+}
+
+
+section{
+    @include secti();
+        h2{
+            @include soutitre();
+        }
+            p{
+                @include texte();
+            }
+ }
